@@ -1,0 +1,12 @@
+SOURCE1=source/equib06.f90
+MYPROGRAM1=equib06
+
+FC=gfortran
+
+all: $(MYPROGRAM1)
+
+$(MYPROGRAM1): $(SOURCE1)
+	$(FC) $(SOURCE1) -o$(MYPROGRAM1) 
+
+clean:
+	rm -f $(MYPROGRAM1) $(MYPROGRAM2) $(MYPROGRAM3)
