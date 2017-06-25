@@ -5,7 +5,7 @@
 
 **Program EQUIB**  (FORTRAN 90)
 
-The Fortran program EQUIB solves the statistical equilibrium equation for each ion and yields atomic level populations and line emissivities for given physical conditions, namely electron temperature and electron density, appropriate to the zones in an ionized nebula where the ions are expected to exist. 
+The Fortran program EQUIB solves the statistical equilibrium equation for each ion and yields atomic level populations and line emissivities for given physical conditions, namely electron temperature and electron density, appropriate to the zones in an ionized nebula where the ions are expected to exist.
 
 ### Installation
 
@@ -16,6 +16,50 @@ How to compile:
 How to clean:
 
     make clean
+
+### Usage
+
+How to perform **plasma diagnostics**:
+
+    ./diagnostic_equib arg1 arg2 arg3 arg4 arg5 arg6
+
+*arg1*: the ion name e.g. 's_ii'.
+
+*arg2*: the upper level from [lines levels](https://github.com/equib/EQUIB/blob/master/docs/lineslevels.readme) e.g. '1,2,1,3/' or '1,2/'.
+
+*arg3*: the lower level from [lines levels](https://github.com/equib/EQUIB/blob/master/docs/lineslevels.readme) e.g. '1,5/' or '1,3/'.
+
+*arg4*: the diagnostics line flux ratio of density- or temperature-sensitive lines e.g. '10.753'.
+
+*arg5*: the diagnostics type: 'T' for temperature and 'D' for density.
+
+*arg6*: the value of another fixed physical condition (density or temperature). It is density if arg5 = 'T', and temperature if arg5 = 'D'.
+
+For example, to determine the electron temperature:
+
+    ./diagnostic_equib 's_ii' '1,2,1,3/' '1,5/' '10.753' 'T' '2550.0'
+
+For example, to determine the electron density:
+
+    ./diagnostic_equib 's_ii' '1,2/' '1,3/' '1.506' 'D' '7000.0'
+
+How to perform **abundance analysis**:
+
+    ./abundance_equib arg1 arg2 arg3 arg4 arg5
+
+*arg1*: the ion name e.g. 'o_iii'.
+
+*arg2*: the atomic level from [lines levels](https://github.com/equib/EQUIB/blob/master/docs/lineslevels.readme) e.g. '3,4/'.
+
+*arg3*: the electron temperature.
+
+*arg4*: the electron density.
+
+*arg5*: the observed line flux relative to Hb, on a scale where I(Hb)=100.0
+
+For example, to determine the O2+ abundance from [O III] line flux I([O III])=1200, where Te=10000 K, and Ne=5000 cm-3:
+
+    ./abundance_equib 'o_iii' '3,4/' '10000.0' '5000.0' '1200.0'
 
 ### References
 
