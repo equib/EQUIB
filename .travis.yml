@@ -1,0 +1,20 @@
+language: c
+
+matrix:
+  include:
+  - os: linux
+    dist: trusty
+    sudo: required
+    env: PLUMED_CC=gfortran PLUMED_CXX=gfortran  MAKEDOC=yes PLUMED_ALL_TESTS=yes
+  - os: linux
+    dist: trusty
+    sudo: required
+    env: PLUMED_CC=gfortran PLUMED_CXX=gfortran  PLUMED_CXXFLAGS=-O3 LAPACK=yes CONFIG_FLAGS="--disable-external-lapack"
+
+install:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update -qq ; fi
+  - if test "$PLUMED_CXX" == "gfortran" -a "$TRAVIS_OS_NAME" == "linux" ; then sudo apt-get install gfortran ; fi
+  - make
+
+script: 
+  - if test "$PLUMED_CXX" ; then make; fi
