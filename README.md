@@ -76,3 +76,17 @@ For example, to determine the O2+ abundance from [O III] line flux I([O III])=12
 * J.P. Harrington, [ApJ, 152, 943, 1968](http://adsabs.harvard.edu/abs/1968ApJ...152..943H)
 
 * J.P. Harrington, [Ph.D.Thesis, Ohio State University, 1967](http://adsabs.harvard.edu/abs/1967PhDT.........6H)
+
+### Publications used EQUIB
+
+The Program EQUIB has been widely used in around 50 peer-reviewed publications since 1984: 
+
+* Citations for the Program EQUIB from the [ADS Databases](http://adsabs.harvard.edu/cgi-bin/nph-ref_query?bibcode=1981ucl..rept.....H&amp;refs=CITATIONS)
+
+### Acknowledgement
+
+If you employ the Program EQUIB in your work, please acknowledge the usage by citing the following references:
+	
+* I. D. Howarth, S. Adams, R. E. S. Clegg, D. P. Ruffle, X.-W. Liu, C. J. Pritchet, & B. Ercolano, Astrophysics Source Code Library,  [ascl:1603.005](http://adsabs.harvard.edu/abs/2016ascl.soft03005H), 2016
+
+* I.D. Howarth & S. Adams, [Program EQUIB](http://adsabs.harvard.edu/abs/1981ucl..rept.....H), University College London, 1981
