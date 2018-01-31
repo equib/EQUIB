@@ -26,9 +26,8 @@
 !                         Now reads reformatted upsilons (easier to see 
 !                         and the 0 0 0 data end is excluded for these c
 !                         The A values have a different format for IBIG=
-!    2006          BE     Converted to F90
-!    2009 April    RW     Misc updates and improvements, inputs from
-!                         cmd line, written purely to do diagnostics.
+!    2009 April    RW     Converted to F90, inputs from cmd line, version
+!                         written purely to do diagnostics.
 !                                                                       
 ! ***** N.B!!  NO TRAPS FOR BAD DATA!!  TAKE CARE!! ****C               
 !                                                                       
