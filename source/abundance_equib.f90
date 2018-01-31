@@ -26,9 +26,8 @@
 !                         Now reads reformatted upsilons (easier to see 
 !                         and the 0 0 0 data end is excluded for these c
 !                         The A values have a different format for IBIG=
-!    2006          BE     Converted to F90
-!    2009 May      RW     Misc updates and improvements. Written only for    
-!                         calculating ionic abundances.  Takes arguments
+!    2009 May      RW     Converted to F90. Version written only for    
+!                         calculating ionic abundances. Takes arguments
 !                         from the command line.
 !                                                                       
 ! ***** N.B!!  NO TRAPS FOR BAD DATA!!  TAKE CARE!! ****C               
