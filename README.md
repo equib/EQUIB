@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/equib/EQUIB.svg?branch=master)](https://travis-ci.com/equib/EQUIB)
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/equib/equib)
 [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/equib/EQUIB/blob/master/LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2584191.svg)](https://doi.org/10.5281/zenodo.2584191)
+[![Zenodo](https://img.shields.io/badge/DOI-10.5281/zenodo.2584191-blue.svg)](https://doi.org/10.5281/zenodo.2584191)
 [![ASCL](https://img.shields.io/badge/ASCL-1603.005-green.svg)](http://adsabs.harvard.edu/abs/2016ascl.soft03005H)
 
 **Program EQUIB**  (FORTRAN 90)
