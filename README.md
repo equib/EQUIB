@@ -1,5 +1,5 @@
 ## EQUIB
-[![Build Status](https://travis-ci.com/equib/EQUIB.svg?branch=master)](https://travis-ci.com/equib/EQUIB)
+[![Build Status](https://app.travis-ci.com/equib/EQUIB.svg?branch=master)](https://app.travis-ci.com.com/equib/EQUIB)
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/equib/equib)
 [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/equib/EQUIB/blob/master/LICENSE)
 [![Zenodo](https://img.shields.io/badge/DOI-10.5281/zenodo.2584191-blue.svg)](https://doi.org/10.5281/zenodo.2584191)
